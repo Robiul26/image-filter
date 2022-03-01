@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: green;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 5px;
+}
+
+nav ul li {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+nav ul li:hover {
+    background: white;
+    color: green;
+}
+
+.active {
+    color: green;
+    background: white;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 1% 10%;
+}
+
+.card-section .card {
+    width: 220px;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-section .card:hover {
+    transition: .5s;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-section .card img {
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.card-section .card img:hover {
+    transform: scale(1.2);
+}
+
+.card-section .card .card-body {}
+
+.card-section .card .card-body img {
+    width: 100%;
+}
+
+footer {
+    background: lightcyan;
+}
+
+footer p {
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: green;
+    text-align: center;
+    padding: 20px;
+}
+footer p a{
+    text-decoration: none;
+    color: green;
+}
+
+@media(max-width:668px) {
+
+
+    nav ul {
+        gap: 2px;
+        padding: 10px 0 10px 0;
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 3px;
+    }
+}
