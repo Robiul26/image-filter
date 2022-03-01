@@ -89,7 +89,8 @@ footer p {
     text-align: center;
     padding: 20px;
 }
-footer p a{
+
+footer p a {
     text-decoration: none;
     color: green;
 }
@@ -107,5 +108,9 @@ footer p a{
         padding: 5px;
         font-size: 16px;
         border-radius: 3px;
+    }
+
+    .card-section .card {
+        width: 100%;
     }
 }
